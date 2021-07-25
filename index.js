@@ -12,6 +12,7 @@ dotenv.config();
 const MongoClient = mongodb.MongoClient;
 const mongo = new MongoClient(process.env.DB_URL, { useUnifiedTopology: true });
 const app = express();
+const PORT = process.env.PORT || 8080;
 
 mongo.connect();
 const credentials = mongo.db("NSP").collection("art-abode");
@@ -64,4 +65,4 @@ app.post("/login", async (req, res) => {
   }
 });
 
-app.listen(8080, () => console.log("APi is running on http://localhost:8080"));
+app.listen(PORT, () => console.log("APi is running on http://localhost:8080"));
