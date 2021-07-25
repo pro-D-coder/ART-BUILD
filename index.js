@@ -5,6 +5,14 @@ import cors from "cors";
 import dotenv from "dotenv";
 import mongodb from "mongodb";
 import bodyParser from "body-parser";
+import { fileURLToPath } from "url";
+
+function dirname(meta) {
+    return fileURLToPath(meta.url);
+}
+
+// call with import.meta
+const __dirname = dirname(import.meta);
 
 
 dotenv.config();
