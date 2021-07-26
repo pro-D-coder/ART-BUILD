@@ -32,7 +32,7 @@ export function LoginForm({ activeForm, setActiveForm, setToken }) {
       pass: password,
     };
     console.log(data);
-    fetch("http://localhost:8080/login", {
+    fetch("/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

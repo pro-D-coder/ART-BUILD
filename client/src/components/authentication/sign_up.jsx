@@ -41,7 +41,7 @@ export function SignUpForm({ activeForm, setActiveForm }) {
       email: email,
       pass: password,
     };
-    fetch("http://localhost:8080/signUp", {
+    fetch("/signUp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
