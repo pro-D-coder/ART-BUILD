@@ -1,11 +1,14 @@
 import React from "react";
 import { Flex, Box, Image } from "@chakra-ui/react";
 import D from '../../About/D.jpeg';
+import AJ from '../../ABout/AJ.jpeg';
+import ARY from '../../About/ARY.jpeg';
+import ANA from '../../About/ANA.jpeg';
 const About = () => {
   const aboutData = [
-    {name: "Anamika",info: "Designation: Front-End developer", img: null},
-    {name: "Aryaman",info: "Designation: Front-End developer", img: null},
-    {name: "Ajay",info: "Designation: Back-End developer", img: null}
+    {name: "Anamika",info: "Designation: Front-End developer", img: ANA},
+    {name: "Aryaman",info: "Designation: Front-End developer", img: ARY},
+    {name: "Ajay",info: "Designation: Back-End developer", img: AJ}
     ,{name: "Daksh",info: "Designation: Back-End developer", img: D}
   ]
   return (
