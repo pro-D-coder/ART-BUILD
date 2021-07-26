@@ -12,9 +12,9 @@ function dirname(meta) {
 }
 
 // call with import.meta
-const dirname = dirname(import.meta);
-let split = dirname.split('/')
-const dir = split.pop(b[b.length - 1]);
+const dirname_name = dirname(import.meta);
+let splited = dirname_name.split('/')
+const dir = splited.pop(splited[splited.length - 1]);
 const __dirname = dir.join('/') + '/'
 
 dotenv.config();
