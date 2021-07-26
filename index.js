@@ -25,6 +25,8 @@ const mongo = new MongoClient(process.env.DB_URL, { useUnifiedTopology: true });
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 mongo.connect();
 const credentials = mongo.db("NSP").collection("art-abode");
 console.log(credentials);
